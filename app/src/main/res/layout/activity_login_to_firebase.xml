@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.courseworklive.activities.LoginToFirebase">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_to_the_back_up"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:id="@+id/login_page_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_page_title"
+        android:textSize="15sp"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:hint="@string/username"
+        android:id="@+id/username" />
+
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/username"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textAlignment="center"
+        android:id="@+id/password_login"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_login"
+        android:text="@string/login"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:text="@string/reset_data"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/reset_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reset_button"
+        android:text="@string/log_out"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logout_button"/>
+
+
+</RelativeLayout>

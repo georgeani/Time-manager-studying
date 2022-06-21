@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.courseworklive">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activities.UserGuide" android:noHistory="true"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name=".service.UpdateFirebase"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.CheckSubjectsDeadline"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.RecordService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="true" />
+
+        <receiver
+            android:name=".broadcastReceiver.WakeUp"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name=".contentProvider.CourseworkContentProvider"
+            android:authorities="com.example.contentprovider.MyContentProvider"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="recordingsRecords" />
+
+        <activity
+            android:name=".activities.LoginToFirebase"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Recording"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SubjectOverview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SubjectsPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddSubject"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

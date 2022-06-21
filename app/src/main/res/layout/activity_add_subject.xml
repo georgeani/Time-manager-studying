@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.courseworklive.activities.AddSubject">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_subject"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:id="@+id/add_subject_page_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/subject_title"
+    android:layout_marginTop="40dp"
+    android:layout_below="@id/add_subject_page_title"
+    android:textSize="20sp"
+    android:id="@+id/add_subject_page_title_edit"
+    android:textAlignment="center"
+    android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="160dp"
+        android:layout_below="@id/add_subject_page_title"
+        android:layout_alignStart="@id/add_subject_page_title_edit"
+        android:textSize="15sp"
+        android:inputType="text"
+        android:id="@+id/add_subject_page_title_editbox"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/add_subject_page_title_edit"
+        android:textSize="20sp"
+        android:id="@+id/add_subject_page_weight_edit"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="160dp"
+        android:layout_below="@id/add_subject_page_title_edit"
+        android:layout_alignStart="@id/add_subject_page_title_edit"
+        android:textSize="15sp"
+        android:inputType="number"
+        android:id="@+id/add_subject_page_weight_editbox"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suggested_effort"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/add_subject_page_weight_edit"
+        android:textSize="20sp"
+        android:id="@+id/add_subject_page_effort_edit"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="200dp"
+        android:layout_below="@id/add_subject_page_weight_edit"
+        android:layout_alignStart="@id/add_subject_page_title_edit"
+        android:textSize="15sp"
+        android:hint="@string/in_hours"
+        android:inputType="number"
+        android:id="@+id/add_subject_page_effort_editbox"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_date"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/add_subject_page_effort_edit"
+        android:textSize="20sp"
+        android:id="@+id/add_subject_page_start_edit"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/add_subject_page_effort_edit"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:hint="@string/date_format"
+        android:id="@+id/add_subject_page_start_editbox"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_date"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/add_subject_page_start_edit"
+        android:textSize="20sp"
+        android:id="@+id/add_subject_page_end_edit"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/add_subject_page_start_edit"
+        android:textSize="15sp"
+        android:hint="@string/date_format"
+        android:id="@+id/add_subject_page_end_editbox"
+        />
+
+    <ImageButton
+        android:id = "@+id/save_button"
+        android:textSize = "18sp"
+        android:textAlignment = "center"
+        android:background = "@drawable/ic_ellipse"
+        android:src="@drawable/ic_save"
+        android:layout_width = "100dp"
+        android:textColor = "#000"
+        android:layout_height = "100dp"
+        android:layout_below="@id/add_subject_page_end_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

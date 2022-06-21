@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/grey"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textviewSubjectTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/subject"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/textviewSubjectWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/weight"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/textviewSubjectTitle"/>
+
+
+        <TextView
+            android:id="@+id/textviewEffortTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/suggested_effort"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/textviewSubjectWeight"/>
+
+        <TextView
+            android:id="@+id/textviewStartTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/start_date"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/textviewEffortTitle"/>
+
+
+        <TextView
+            android:id="@+id/textviewEndTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/end_date"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/textviewStartTitle"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

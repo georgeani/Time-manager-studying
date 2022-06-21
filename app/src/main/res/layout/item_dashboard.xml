@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/grey"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/listviewSubjects">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textviewSubjectTitleDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/subject"
+            android:textSize="25sp"/>
+
+
+        <TextView
+            android:id="@+id/textviewEffortTitleDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/suggested_effort"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/textviewSubjectTitleDashboard"/>
+
+        <TextView
+            android:id="@+id/textviewDedicatedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/hours_dedicated"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/textviewEffortTitleDashboard"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

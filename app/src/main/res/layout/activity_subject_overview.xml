@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.courseworklive.activities.SubjectOverview">
+
+    <RelativeLayout
+        android:id="@+id/layout_overview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/subjectOverviewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/subject_overview"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/weightSubjectOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subjectOverviewTitle"
+            android:layout_marginTop="15dp"
+            android:text="@string/weight"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/weightSubjectOverviewChangeable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subjectOverviewTitle"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/test"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/EffortSubjectOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weightSubjectOverview"
+            android:layout_marginTop="15dp"
+            android:text="@string/suggested_effort"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/EffortSubjectOverviewChangeable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weightSubjectOverview"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/test"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/StartSubjectOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EffortSubjectOverview"
+            android:layout_marginTop="15dp"
+            android:text="@string/start_date"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/StartSubjectOverviewChangeable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EffortSubjectOverview"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/test"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/EndSubjectOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StartSubjectOverview"
+            android:layout_marginTop="15dp"
+            android:text="@string/end_date"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/EndSubjectOverviewChangeable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StartSubjectOverview"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/test"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/TotalHoursSubjectOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EndSubjectOverview"
+            android:layout_marginTop="15dp"
+            android:text="@string/total_hours"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/TotalHoursSubjectOverviewChangeable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EndSubjectOverview"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/test"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSubjectOverview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/TotalHoursSubjectOverview"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_ellipse"
+            android:contentDescription="@string/add_entry"
+            android:src="@drawable/ic_plus"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButtonModifySubjectOverview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/TotalHoursSubjectOverview"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_ellipse"
+            android:contentDescription="@string/modify_subject"
+            android:src="@drawable/ic_pencil" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDeleteSubjectOverview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/TotalHoursSubjectOverview"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_ellipse"
+            android:contentDescription="@string/delete"
+            android:src="@drawable/ic_bin" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/layout_overview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/overviewRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            />
+
+        <TextView
+            android:id="@+id/empty_view_overview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/no_data_available" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

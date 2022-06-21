@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>User Guide</title>
+</head>
+<style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: rgb(226, 226, 226);
+        }
+
+        .test{
+            display:flex;
+            justify-content:center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .navClass{
+            display:flex;
+            justify-content:center;
+        }
+
+        .navCard{
+            width:50%;
+            background-color: rgb(197, 192, 202);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .warningCard{
+            width:50%;
+            background-color: rgb(230, 56, 56);
+            color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .subjectCard{
+            width:50%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        h2, h3, h4{
+            text-align: center;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        img{
+            height:50%;
+            width:75%;
+        }
+
+        .screenshots{
+            height:100%;
+            width:50%;
+        }
+
+        @media screen and (min-width: 1000px){
+            .subjectCard{
+                width:25%;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                border-radius: 5px;
+            }
+
+            .navCard{
+                width:20%;
+                background-color: rgb(197, 192, 202);
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                border-radius: 5px;
+            }
+
+            .warningCard{
+                width:40%;
+                background-color: rgb(230, 56, 56);
+                color: white;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                border-radius: 5px;
+            }
+
+            .screenshots{
+                height:70%;
+                width:35%;
+            }
+
+            article{
+                width:50%;
+                text-align: center;
+            }
+
+        }
+
+    </style>
+<body>
+<h1>Welcome to our App</h1>
+<br>
+<div class="test">
+    <div class="navCard">
+        <div class="navClass">
+            <a href="#start">Quick Start</a>
+        </div>
+        <br>
+        <div class="navClass">
+            <a href="#subjects">Subjects</a>
+        </div>
+        <br>
+        <div class="navClass">
+            <a href="#record">Recording a session</a>
+        </div>
+        <br>
+        <div class="navClass">
+            <a href="#backup">Use Firebase</a>
+        </div>
+    </div>
+</div>
+<br></br>
+
+<div class="test" id="start">
+    <article style="text-align: center;">
+        <h2>Quick Start Guide</h2>
+
+        <div class="test">
+            <img src="MainMenu.png" alt="Main Menu" class="screenshots">
+        </div>
+        <p style="text-align: center; font-weight: 800;">
+            Main Menu page<br>
+            The first page that you will see<br>
+            once you open the app
+        </p>
+
+        <div class="test">
+            <ol type="1" style="font-weight: 800;">
+                <li>
+                    Press the plus button<br> to add
+                    a subject
+                </li>
+                <li>
+                    Input the subjects details<br>
+                    and press the save button
+                </li>
+                <li>
+                    Go to recording<br> and click your subject
+                </li>
+                <li>
+                    Your recording will start
+                </li>
+            </ol>
+        </div>
+    </article>
+</div>
+
+<div class="test" id="subjects">
+    <article>
+        <h2>Subjects</h2>
+        <p>The app allows for the recording of how much time
+            is spent studying per subject. To do that it keeps
+            information of each subject. This allows the user to
+            see how much progress has been made as well to receive notifications
+            if not enough progress has been made</p>
+
+        <p>
+            It is important to note that this is a helping app.<br>
+            It is able to store subject information of each subject.<br>
+            This is done as it allows for better usability,<br>
+            The system can store information for each subject<br>
+            in the form of subject title, weight (importance),<br>
+            effort (hours needed to be spent studying),<br>
+            starting date as well as the ending date.<br>
+        </p>
+
+        <h3>Adding a subject</h3>
+        <p>The process of adding a new subject in the app is quite simple.
+            It requires the user to click on the Add a Subject option in the
+            bottom navbar. Then the user will be taken in the Add a Subject Page.
+            There they will input all the relevant information. And click the save button.
+
+        <div class="test">
+            <img src="AddSubject.png" alt="Main Menu" class="screenshots">
+        </div>
+        <p style="text-align: center; font-weight: 800;">Add a Subject Page.</p>
+
+        </p><br>
+
+        <div class="test">
+            <div class="warningCard">
+                <h2>Warning</h2>
+                <p style="text-align: center;">If you have opted to use the Backup feature in that device
+                    the subject will not be saved until you have recorded your first session.</p>
+            </div>
+        </div>
+
+        <h3>Modifying an existing subject</h3>
+        <p>In some cases the wrong data will be inputted in the database when entering a new
+            subject or some of the subject specification changes.</p>
+
+        <p>In order to accommodate those changes you will need to go to the Subjects page,
+            click on the subject that you want to modify. Then on the subject page click the pencil button.
+            There you will go to a page where you can modify the subject information.<br>
+            Once you have completed the modification of the information you can click on the save button
+        </p>
+
+        <div class="test">
+            <img src="ChangeSubject.png".png" alt="Main Menu" class="screenshots">
+        </div>
+        <p style="text-align: center; font-weight: 800;">Modify Subject Page.</p>
+
+
+        <h3>Deleting a Subject</h3>
+        <p>
+            Sometimes a subject in the subject list may need to be removed.
+            There are multiple ways to delete it.<br><br>
+            <b>1.</b> Through the swipe to delete in the Subject Page<br>
+            <b>2.</b> Through the Subject Overview Page<br>
+        <h4>Subject Page</h4>
+        Swiping to the the right in the Subject page will delete the subject.
+        Just click delete in the dialog box that will come up<br>
+
+        <div class="test">
+            <img src="ConfirmDeletionSubjectsPage.png" alt="Main Menu" class="screenshots">
+        </div>
+        <p style="text-align: center; font-weight: 800;">Confirm deletion through<br>
+            the Subjects Page</p>
+
+        <h4>Subject Overview Page</h4>
+        By clicking the bin button you will be prompted to click whether or not you would want to
+        delete the subject you are seeing. Just click delete in the dialog box that will come up
+        and the subject will be deleted.<br>
+
+        <div class="test">
+            <img src="ConfirmDeletion.png" alt="Main Menu" class="screenshots">
+        </div>
+        <p style="text-align: center; font-weight: 800;">Confirm deletion through<br>
+            the Subject Overview Page</p>
+
+        </p>
+    </article>
+</div>
+
+<div class="test" id="record">
+    <article>
+        <h2>Recording a session</h2>
+        <p>Recording studying sessions is the most important part of the
+            system.<br>
+            There are two ways of starting a recording;<br>
+            <b>1.</b> Through the recording button<br>
+            <b>2.</b> Through the Subject Page<br>
+
+        <div class="test">
+            <img src="Recording.png" alt="Main Menu" class="screenshots">
+        </div>
+        <p style="text-align: center; font-weight: 800;">Recording Page</p>
+
+        <h3>Recording Button</h3>
+        Press the recording button and you will be guided to a page with all your Subjects.
+        <br>There you can choose the subject that you want to record. By just clicking it,
+        the recording will start. Just press the center button when you are done and the
+        recording will stop and be stored.
+
+        <div class="test">
+            <img src="RecordingPage.png" alt="Main Menu" class="screenshots">
+        </div>
+        <p style="text-align: center; font-weight: 800;">Recording Page where you can select <br>
+            the subject you want to record</p>
+
+        <h3>Subject Page</h3>
+        You can start a recording through the Subject Overview Page. Just click the plus button.
+        Once done just click the save button.
+
+        <div class="test">
+            <img src="SubjectOverview.png" alt="Main Menu" class="screenshots">
+        </div>
+        <p style="text-align: center; font-weight: 800;">
+            Subject Overview Page where you can press <br>
+            the plus button to start a recording session<br>
+            on that subject
+        </p>
+
+        <h3>Deleting a recording</h3>
+        Sometimes accidental recordings occur and as such they need to be removed.<br>
+        To do that just swipe right to one of the recordings in the Subject Overview Page.
+        <br> Then you will be prompted to confirm the deletion. Press delete to confirm it.
+
+        <div class="test">
+            <img src="DeleteLog.png" alt="Main Menu" class="screenshots">
+        </div>
+        <p style="text-align: center; font-weight: 800;">
+            Deleting a recording through<br>
+            the Subject Overview Page
+        </p>
+
+        </p>
+    </article>
+</div>
+
+<div class="test" id="backup">
+    <article>
+        <h2>Use Backup</h2>
+
+        <div class="test">
+            <div class="warningCard">
+                <h2>Warning</h2>
+                <p style="text-align: center;">
+                    In order to use this feature you need to already have a pre-existing
+                    account in the application
+                </p>
+            </div>
+        </div>
+
+        <p>
+            The use of Firebase in the app is in order to provide a backup system
+            to the user in case something happens to their original device.<br>
+            It allows for an easy and seamless backup functionality.<br>
+            Automatically backing up the subjects when a change occurs as well as
+            deleting the subjects that have been deleted.
+
+            <div class="test">
+                <div class="warningCard">
+                    <h2>Warning</h2>
+        <p style="text-align: center;">
+            This feature should be used as a last resort method.<br>
+            Please log in to your account before you use this feature.<br>
+            Failure to do so will resort in inaccessibility to the feature and the need to reset the application<br>
+            Thus losing all your data
+        </p>
+</div>
+</div>
+<br>
+
+<h3>Login to the Backup</h3>
+In order to login to the Backup feature you will need to click
+to the three dots up in right corner and select Login to Backup.<br>
+There enter your credentials and press login.<br>
+If your credentials are wrong a pop up box will be shown.<br>
+<b>Please ensure you have an internet connection</b><br>
+If they are correct your previous saved lessons will be loaded.<br>
+If you have used the application before your application data will need to be reset.
+
+<div class="test">
+    <img src="Backup.png" alt="Main Menu" class="screenshots">
+</div>
+<p style="text-align: center; font-weight: 800;">
+    Login Page for the Backup Functionality
+</p>
+
+<h3>Backing up</h3>
+The backing up procedure is made Automatically after a change has been made in the application data.
+
+<h3>Data Reset</h3>
+Sometimes you may want to perform a data reset. <br>
+This operation can easily be performed in the Login Page
+for the use of the Backup feature.<br>
+Just click on the Reset Button and click confirm in the dialog box.<br>
+The data reset action will then run.
+
+<div class="test">
+    <img src="BackupReset.png" alt="Main Menu" class="screenshots">
+</div>
+<p style="text-align: center; font-weight: 800;">
+    Reset Data Confirmation promo
+</p>
+</p>
+
+
+</article>
+</div>
+
+</body>
+</html>
